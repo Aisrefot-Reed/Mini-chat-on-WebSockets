@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebSocket Чат</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="light-theme">
+    <div class="chat-container">
+        <header class="chat-header">
+            <h1>Чат</h1>
+            <div class="theme-toggle">
+                <button id="themeToggle">
+                    <i class="theme-icon">🌙</i>
+                </button>
+            </div>
+        </header>
+
+        <div class="chat-sidebar">
+            <h2>Участники</h2>
+            <ul id="usersList" class="users-list">
+                <!-- Список пользователей будет добавляться динамически -->
+            </ul>
+        </div>
+
+        <div class="chat-main">
+            <div id="chatMessages" class="chat-messages">
+                <!-- Сообщения будут добавляться динамически -->
+            </div>
+
+            <form id="messageForm" class="message-form">
+                <input 
+                    type="text" 
+                    id="messageInput" 
+                    placeholder="Введите сообщение..."
+                    autocomplete="off"
+                    required
+                >
+                <button type="submit">Отправить</button>
+            </form>
+        </div>
+    </div>
+    <script src="theme.js"></script>
+    <script src="WebSockets.js"></script>
+</body>
+</html>
