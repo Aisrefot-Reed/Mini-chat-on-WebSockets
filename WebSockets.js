@@ -1,5 +1,5 @@
 // Создаем подключение к WebSocket серверу
-const socket = new WebSocket('@https://echo.websocket.org/');
+const socket = new WebSocket('wss://echo.websocket.org/');
 
 // Получаем элементы DOM
 const messageForm = document.getElementById('messageForm');
